@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bta_mod_template",
+  "version": "${mod_version}",
+  "name": "BTA Mod Template",
+  "description": "A template for Better Than Adventure! mods.",
+  "authors": [
+    "5Avian"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "fiveavian.bta_mod_template.BTAModTemplateClient"
+    ],
+    "server": [
+      "fiveavian.bta_mod_template.BTAModTemplateServer"
+    ]
+  },
+  "mixins": [
+    "bta_mod_template.mixins.json"
+  ],
+  "accessWidener": "bta_mod_template.accesswidener",
+  "depends": {
+    "minecraft": "~7.2",
+    "fabricloader": ">=0.15.5",
+    "halplibe": ">=3.5.4"
+  }
+}
